@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+</head>
+
+<body>
+    
+    <script>
+        
+        var suma1=0;
+        var suma2=0;
+       
+       var FlujoDeCaja = [
+
+        {
+            periodo: "Enero",
+            ingresos: 1500,
+            egresos: 1500
+        },
+
+        {
+            periodo: "Febrero",
+            ingresos: 2500,
+            egresos: 2500
+        },
+
+        {
+            periodo: "Marzo",
+            ingresos: 84683,
+            egresos: 1155
+        },
+
+        {
+            periodo: "Abril",
+            ingresos: 135353,
+            egresos: 1533
+        },
+
+        {
+            periodo: "Mayo",
+            ingresos: 1535,
+            egresos: 5434
+        },
+
+        {
+            periodo: "Junio",
+            ingresos: 4343354,
+            egresos: 5434543
+        },
+
+        {
+            periodo: "Julio",
+            ingresos: 435453,
+            egresos: 4543
+        },
+
+        {
+            periodo: "Agosto",
+            ingresos: 78351,
+            egresos: 7816
+        },
+
+        {
+            periodo: "Septiembre",
+            ingresos: 1878,
+            egresos: 95634
+        },
+
+        {
+            periodo: "Octubre",
+            ingresos: 48483,
+            egresos: 9433
+        },
+
+        {
+            periodo: "Noviembre",
+            ingresos: 35483,
+            egresos: 53133
+        },
+
+        {
+            periodo: "Diciembre",
+            ingresos: 3843,
+            egresos: 348133
+        },
+
+        ];
+        
+
+
+
+            for(var i=0; i< FlujoDeCaja.length; i++){
+
+                
+                console.log("Ingresos " + FlujoDeCaja[i]["periodo"] + ": " + FlujoDeCaja[i]["ingresos"]
+                + " - " + "Egresos " + FlujoDeCaja[i]["periodo"] + ": " + FlujoDeCaja[i]["egresos"]);
+
+
+                suma1 += FlujoDeCaja[i]["ingresos"];
+
+                console.log("Total ingresos: " + suma1);
+
+
+                suma2 += FlujoDeCaja[i]["egresos"];
+
+                console.log("Total egresos: " + suma2);
+
+
+                
+
+            };  
+            
+                if( suma1 > suma2){
+
+                console.log("LA EMPRESA ES RENTABLE!!!: " + suma1);
+
+                }else{
+                console.log("LA EMPRESA NO ES RENTABLE!!!: " + "-"+suma1);
+
+                    }
+            
+    </script>
+
+</body>
+
+</html>
+
+

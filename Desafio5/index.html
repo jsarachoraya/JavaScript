@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <header><h1><strong>BIENVENIDOS A SOLUCIONES ARGEN-FIN</strong></h1></header>
+
+        <div>
+            <h2>¿Desea calcular Punto de Equilibrio?</h2>
+            Si <input type="radio" id="Si" value="Si" name="lang" />
+            No <input type="radio" id="No" value="No" name="lang" />
+            <button onclick="RealizarCalculo()"> ACEPTAR</button>
+           
+        </div>
+
+            <div><h4>*Seleccionar Si o No y hacer click en aceptar</h4></div>
+
+            <script>
+
+                const clickSi = () => {
+                
+                    var cf = window.prompt('Ingrese Costos fijos: ');
+                    var pv = window.prompt('Ingrese Precio de venta: ');
+                    var cv = window.prompt('Ingrese Costos variables: ');
+                    var pe = (cf/(pv-cv)); //Punto de equilibrio
+                    alert ('El punto de equilibrio es: ' + pe);
+                }
+                const clickNo = () => alert ('Hasta la proxima');
+
+                function RealizarCalculo()
+
+                {
+
+                    const radioSi = document.getElementById('Si');
+                    const radioNo = document.getElementById('No');
+                    
+
+                    if(radioSi.checked)
+                        onclick = clickSi;
+                    else if(radioNo.checked)
+                        onclick = clickNo;
+                }
+
+            </script>
+</body>
+</html>
